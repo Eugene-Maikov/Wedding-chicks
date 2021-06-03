@@ -22,17 +22,81 @@
       <aside class="aside">
         <button class="btn btn-pink">управление контентом</button>
         <h4 class="aside__title">редактирование страниц</h4>
-        <ul class="aside__list">
-          <li class="aside__list-item">Добро пожаловать</li>
-          <li class="aside__list-item">Люди</li>
-          <li class="aside__list-item">Расписание</li>
-          <li class="aside__list-item">RSVP</li>
-          <li class="aside__list-item">Размещение</li>
-          <li class="aside__list-item">Реестр</li>
-          <li class="aside__list-item">Фотографии</li>
-          <li class="aside__list-item">Путешествия</li>
-          <li class="aside__list-item">Чем заняться</li>
-        </ul>
+        <div class="aside__list">
+          <div class="aside__list-item">Добро пожаловать</div>
+          <div class="aside__list-item">
+            <a class="aside__list-text" href="#">Люди</a>
+            <div class="aside__list-switch">
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="aside__list-item">
+            <a class="aside__list-text" href="#">Расписание</a>
+            <div class="aside__list-switch">
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="aside__list-item">
+            <a class="aside__list-text" href="#">RSVP</a>
+            <div class="aside__list-switch">
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="aside__list-item">
+            <a class="aside__list-text" href="#">Размещение</a>
+            <div class="aside__list-switch">
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="aside__list-item">
+            <a class="aside__list-text" href="#">Реестр</a>
+            <div class="aside__list-switch">
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="aside__list-item">
+            <a class="aside__list-text" href="#">Фотографии</a>
+            <div class="aside__list-switch">
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="aside__list-item">
+            <a class="aside__list-text" href="#">Путешествия</a>
+            <div class="aside__list-switch">
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="aside__list-item">
+            <a class="aside__list-text" href="#">Чем заняться</a>
+            <div class="aside__list-switch">
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
         <button class="btn btn-pink">конструкция выключателя</button>
         <p class="aside__title">Ваши кости</p>
         <div class="aside__info">
@@ -40,6 +104,9 @@
           <p class="aside__info-second">Сбор Физических Адресов</p>
         </div>
       </aside>
+      <div class="menu__burger" id="burger">
+        <img class="menu__burger-icon" src="images/menu-pink.svg" alt="icon">
+      </div>
       <main class="main">
         <h1 class="driver__title">Управление сайтом</h1>
         <section class="webadress">
@@ -50,13 +117,22 @@
             <button class="btn btn-dark">Изменить</button>
           </div>
         </section>
+
+
+
         <section class="privacy">
           <div class="privacy__inner">
             <div class="privacy__item">
               <h2 class="title privacy__title">Сделайте вашь сайт приватным</h2>
+
+              <label class="switch">
+                <input type="checkbox" id="privacy__checkbox">
+                <span class="slider"></span>
+              </label>
+
             </div>
             <div class="privacy__item">
-              <p>Держите ваш свадебный сайт частным! Переключившись на
+              <p class="privacy__item-text">Держите ваш свадебный сайт частным! Переключившись на
                 включение функции ввода пароля. После того как вы создали пароль
                 вы можете начать делиться URL адресом вашего свадебного
                 сайта вместе с паролем в любое время</p>
@@ -78,6 +154,9 @@
             </div>
           </form>
         </section>
+
+
+
         <section class="desing">
           <h2 class="title">Дизайн сайта</h2>
           <div class="desing__inner">
@@ -87,11 +166,12 @@
             <div class="desing__item">
               <div class="desing__content">
                 <p class="desing__text">Калейдоскоп Свадебный Сайт</p>
-                <button class="btn btn-gray">Конструкция выключателя</button>
+                <button class="btn btn-gray desing__btn">Конструкция выключателя</button>
               </div>
             </div>
           </div>
         </section>
+
         <section class="stylePage">
           <h2 class="title">Выберете свой стиль страницы</h2>
           <p class="stylePage__text">Выберите одностраничный веб-сайт,
@@ -99,35 +179,47 @@
             или многостраничный веб-сайт, чтобы
             иметь несколько страниц.</p>
           <div class="stylePage__button">
-            <button class="btn btn-dark">Несколько страниц</button>
-            <button class="btn btn-dark">Одна страница</button>
+            <button class="btn btn-dark stylePage__btn-1 ">Несколько страниц</button>
+            <button class="btn btn-dark stylePage__btn-2">Одна страница</button>
           </div>
           <h2 class="title">Выберите макет</h2>
           <p class="stylePage__text">Выберите а, если вы хотите иметь
             фотографии на своем свадебном сайте. Вы также
             можете изменить макеты позже.</p>
-          <div class="stylePage__image">
-            <img class="stylePage__img" src="images/tamplate.jpg" alt="image">
+          <div class="stylePage__image stylePage__image-1">
+            <div class="stylePage__img-box-1">
+              <img class="stylePage__img" src="images/tamplate.jpg" alt="image">
+            </div>
             <p class="stylePage__image-description">Изображение</p>
           </div>
-          <div class="stylePage__image">
-            <img class="stylePage__img" src="images/tamplate.jpg" alt="image">
+          <div class="stylePage__image stylePage__image-2">
+            <div class="stylePage__img-box-2">
+              <img class="stylePage__img" src="images/tamplate.jpg" alt="image">
+            </div>
             <p class="stylePage__image-description">Изображение</p>
           </div>
-          <div class="stylePage__image">
-            <img class="stylePage__img" src="images/tamplate.jpg" alt="image">
+          <div class="stylePage__image stylePage__image-3">
+            <div class="stylePage__img-box-3">
+              <img class="stylePage__img" src="images/tamplate.jpg" alt="image">
+            </div>
             <p class="stylePage__image-description">Изображение</p>
           </div>
-          <h2 class="title">Выберете свой цвет</h2>
-          <div class="stylePage__colors">
-            <div class="stylePage__colors-item color1"></div>
-            <div class="stylePage__colors-item color2"></div>
-            <div class="stylePage__colors-item color3"></div>
+
+          <div class="stylePage__choice">
+            <h2 class="title">Выберете свой цвет</h2>
+            <div class="stylePage__colors">
+              <div class="stylePage__colors-item color1"></div>
+              <div class="stylePage__colors-item color2"></div>
+              <div class="stylePage__colors-item color3"></div>
+            </div>
           </div>
           <div class="stylePage__btn">
             <button class="btn btn-dark">Сохранить</button>
           </div>
         </section>
+
+
+
         <section class="photographer">
           <h2 class="title">Добавьте своего фотографа</h2>
           <form class="photographer__form" action="/">
