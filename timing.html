@@ -266,23 +266,26 @@
                 </div>
               </div>
               <div class="timing__buttons">
-                <button class="btn btn-pink btn-edit box__delete-press"><img class="btn-delete" src="images/delete.svg"
+                <button class="btn btn-pink btn-edit popup-open"><img class="btn-delete" src="images/delete.svg"
                     alt=""> Удалить</button>
                 <button class="btn btn-dark btn-edit button__delete-edit">Изменить</button>
               </div>
             </div>
           </div>
-          <div class="modal">
-            <div class="box__delete">
-              <div class="box__delete-icon">
-                <img class="box__delete-close" src="images/close.svg" alt="">
-              </div>
-              <h3 class="box__title">Вы уверены, что хотите удалить это событие?</h3>
-              <p class="box__text">Это событие будет удалено навсегда. Вы не можете отменить это действие.
-              </p>
-              <div class="timing__buttons-delete">
-                <button class="btn btn-dark box__delete-btn button__delete-cloce">ОТМЕНА</button>
-                <button class="btn btn-pink box__delete-btn">УДАЛИТЬ</button>
+
+          <div class="popup-fade">
+            <div class="popup">
+              <!-- Закрыть -->
+              <a class="popup-close" href="#">
+                <img src="images/close.svg" alt="">
+              </a>
+              <!-- Контент -->
+              <h2 class="popup__title">Вы уверены, что хотите удалить это событие?</h2>
+              <p class="popup__text">Это событие будет удалено навсегда. Вы не можете отменить это действие.</p>
+              <!-- Кнопки -->
+              <div class="popup__buttons">
+                <button class="btn btn-dark popup__btn popup-close-btn">Отмена</button>
+                <button class="btn btn-pink popup__btn ml15">Удалить</button>
               </div>
             </div>
           </div>
